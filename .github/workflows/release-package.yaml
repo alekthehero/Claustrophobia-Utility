@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish:
-    name: Publish Code as Github Package - ${{ inputs.version }}
+    name: Publish Code as Github Package - ${{ github.ref_name }}
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -26,6 +26,6 @@ jobs:
       - name: Publish
         run: ./gradlew :publish
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ github.ref_name }}
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
