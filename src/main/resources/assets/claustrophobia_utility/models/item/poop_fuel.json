@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "claustrophobia_utility:item/poop_fuel"
+  }
+}

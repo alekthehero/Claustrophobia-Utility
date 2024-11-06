@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "category": "misc",
+  "key": {
+    "D": {
+      "item": "claustrophobia_utility:poop"
+    },
+    "A": {
+      "item": "minecraft:paper"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "BAB",
+    "ADA",
+    "BAB"
+  ],
+  "result": {
+    "item": "claustrophobia_utility:poop_fuel"
+  },
+  "show_notification": true
+}
